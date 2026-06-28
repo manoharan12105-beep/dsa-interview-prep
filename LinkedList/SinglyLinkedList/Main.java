@@ -30,5 +30,8 @@ public class Main {
         // Delete Last
         sl.deleteLast();
         sl.display();
+
+        sl.delete(2);
+        sl.display();
     }
 }

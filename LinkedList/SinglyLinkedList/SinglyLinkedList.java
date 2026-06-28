@@ -118,6 +118,22 @@ public class SinglyLinkedList {
 
 
 
+  // Deletion - any Index(0 based) (7)
+  public void delete(int index) {
+    if(index == 0) {
+      deleteFirst();
+      return;
+    } else if(index == size -1 ){
+      deleteLast();
+      return;
+    }
+
+    Node prev = get(index - 1);
+    prev.next = prev.next.next;
+  }
+
+
+
   // Display LinkedList (2)
   public void display() {
     Node temp = head;
@@ -130,12 +146,32 @@ public class SinglyLinkedList {
     System.out.println("End");
   }
 
+  // Gets the Node of an index
   public Node get(int index) {
+    if(index < size) {
+      Node node = head;
+      for (int i = 0; i < index; i++) {
+        node = node.next;
+      }
+
+      return node;
+    }
+
+    return null;
+  }
+
+
+
+  public Node find(int value) {
     Node node = head;
-    for (int i = 0; i < index; i++) {
+    while(node != null) {
+      if(node.data == value) {
+        return node;
+      }
       node = node.next;
     }
 
-    return node;
+    return null;
   }
+
 }
