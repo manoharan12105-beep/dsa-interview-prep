@@ -2,7 +2,7 @@ package LinkedList.DoublyLinkedList;
 
 public class DLL {
   private Node head;
-  private int size;
+  private int size = 0;
   
 
   private  class Node{
@@ -21,7 +21,9 @@ public class DLL {
     }
   }
 
-  // Insert first (1)
+
+
+  // Insertion - First (1)
   public void insertFirst(User u) {
     Node node = new Node(u);
     node.next = head;
@@ -31,9 +33,47 @@ public class DLL {
     }
 
     head = node;
+    size++;
   }
 
 
+
+  // Insertion - Last (3)
+  public void insertLast(User u) {
+    if(size == 0) {
+      insertFirst(u);
+      return;
+    }
+
+    Node last = getTail();
+    Node node = new Node(u);
+    last.next = node;
+    node.prev = last;
+    size++;
+  }
+
+
+
+
+  public void insert(int index, User u) {
+    if(index == 0) {
+      insertFirst(u);
+      return;
+    } else if(index >= size) {
+      insertLast(u);
+      return;
+    }
+    
+    Node temp = getNode(index - 1);
+    Node node = new Node(u);
+    
+    node.next = temp.next;
+    temp.next.prev = node;
+    temp.next = node;
+    node.prev = temp;
+
+    size++;
+  }
 
   // Display (forward) (2)
   public void display() {
@@ -50,12 +90,13 @@ public class DLL {
   }
 
 
+  
 
-  // Display the the List in Reverse 
+  // Display the the List in Reverse (2)
   public void displayRev() {
     Node last = getTail();
 
-    System.out.print("Display Backward : ");
+    System.out.print("Display Backward: ");
     while(last != null) {
       User user = last.user;
       System.out.print("|User Id : " + user.getId() + ", User Name : " + user.getName() + "| -> ");
@@ -76,5 +117,14 @@ public class DLL {
     }
 
     return last;
+  }
+
+
+  public Node getNode(int index) {
+    Node node = head;
+    for (int i = 0; i < index; i++) 
+      node = node.next;
+
+    return node;
   }
 }
