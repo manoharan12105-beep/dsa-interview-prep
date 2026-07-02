@@ -90,6 +90,54 @@ public class DLL {
   }
 
 
+
+  public void deleteFirst() {
+    Node node = head;
+    node = node.next;
+
+    head = node;
+    head.prev = null;
+
+    size--;
+  }
+
+
+  public void deleteLast() {
+    if(size == 1) {
+      deleteFirst();
+      return;
+    }
+
+    Node node = getNode(size - 2);
+    node.next = null;
+    size--;
+  }
+
+
+
+
+  public void delete(int index) {
+    if(index <= size) {
+      System.out.println("Invalid index");
+      return;
+    }
+    if(index == 0) {
+      deleteFirst();
+      return;
+    } else if(index == size - 1) {
+      deleteLast();
+      return;
+    }
+
+    Node node = getNode(index);
+    node.prev.next = node.next;
+    node.next.prev = node.prev;
+
+    size--;
+
+  }
+
+
   
 
   // Display the the List in Reverse (2)
