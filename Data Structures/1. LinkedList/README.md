@@ -1,18 +1,21 @@
 # 1. Linked List
 
-This directory contains Java implementations of **Singly Linked List**, **Doubly Linked List**, and a collection of **popular LeetCode Linked List problems**. The code is written from scratch to understand the internal working of linked lists before solving interview questions.
+This directory contains Java implementations of **Singly Linked List**, **Doubly Linked List**, and a collection of **interview and LeetCode-style Linked List problems**. All implementations are written from scratch to help understand pointer manipulation and the internal workings of linked lists.
 
 ---
 
-## 📂 Directory Structure
+# 📂 Directory Structure
 
-```
+```text
 1. LinkedList
 │
 ├── DoublyLinkedList
 │   ├── DLL.java
 │   ├── User.java
-│   └── Main.java
+│   ├── Main.java
+│   └── Problems
+│       ├── FindMidElement.java
+│       └── PalindromeCheck.java
 │
 ├── SinglyLinkedList
 │   ├── SinglyLinkedList.java
@@ -20,8 +23,10 @@ This directory contains Java implementations of **Singly Linked List**, **Doubly
 │   └── Problems
 │       ├── BinaryToNumber.java
 │       ├── LinkedListCycle.java
-│       ├── MiddleofTheLinkedList.java
+│       ├── MiddleOfTheLinkedList.java
 │       └── ReverseList.java
+│
+└── README.md
 ```
 
 ---
@@ -30,7 +35,7 @@ This directory contains Java implementations of **Singly Linked List**, **Doubly
 
 ## Singly Linked List
 
-Implementation of a custom Singly Linked List without using Java Collections.
+Implementation of a custom **Singly Linked List** without using Java Collections.
 
 ### Operations Implemented
 
@@ -40,22 +45,22 @@ Implementation of a custom Singly Linked List without using Java Collections.
 - Delete First Node
 - Delete Last Node
 - Delete at Any Position
-- Find a Node
+- Search a Node
 - Get Node by Index
 - Display the Linked List
 
 ### Features
 
-- Maintains both **head** and **tail** references.
+- Maintains both **head** and **tail** pointers.
 - Tracks the current size of the list.
-- Supports efficient insertion at the end using a tail pointer.
-- Demonstrates manual node manipulation.
+- Efficient insertion at the end using a tail pointer.
+- Demonstrates pointer manipulation from scratch.
 
 ---
 
 ## Doubly Linked List
 
-Implementation of a custom Doubly Linked List using a `User` object as node data.
+Implementation of a custom **Doubly Linked List** using a `User` object as node data.
 
 Each node stores:
 
@@ -85,20 +90,29 @@ Each node stores a `User` object containing:
 - Age
 - Salary
 
-This demonstrates how linked lists can store custom objects instead of primitive data types.
+This demonstrates storing custom objects inside linked list nodes instead of primitive data types.
 
 ---
 
 # 🧩 Interview Problems
 
-The `Problems` folder contains solutions to commonly asked Linked List interview questions.
+## Singly Linked List Problems
 
 | Problem | LeetCode | Concept |
-|----------|-----------|---------|
+|----------|:--------:|---------|
 | Binary Number in a Linked List to Integer | 1290 | Binary Conversion |
-| Linked List Cycle | 141 | Floyd's Slow & Fast Pointer |
-| Middle of the Linked List | 876 | Two Pointer Technique |
+| Linked List Cycle | 141 | Floyd's Cycle Detection |
+| Middle of the Linked List | 876 | Slow & Fast Pointer |
 | Reverse Linked List | 206 | In-place Reversal |
+
+---
+
+## Doubly Linked List Problems
+
+| Problem | Concept |
+|----------|---------|
+| Find Middle Element | Slow & Fast Pointer |
+| Palindrome Check | Two Pointer Technique |
 
 ---
 
@@ -108,14 +122,16 @@ The `Problems` folder contains solutions to commonly asked Linked List interview
 - Head Pointer
 - Tail Pointer
 - Previous Pointer
-- Dynamic Memory Allocation
 - Traversal
+- Searching
 - Insertion
 - Deletion
-- Searching
+- Dynamic Memory Allocation
 - Two Pointer Technique
 - Slow & Fast Pointer
 - In-place Reversal
+- Palindrome Checking
+- Forward & Reverse Traversal
 
 ---
 
@@ -124,15 +140,16 @@ The `Problems` folder contains solutions to commonly asked Linked List interview
 | Operation | Singly | Doubly |
 |------------|:------:|:------:|
 | Insert First | O(1) | O(1) |
-| Insert Last | O(1)* | O(n) |
+| Insert Last* | O(1) | O(1) |
 | Insert at Index | O(n) | O(n) |
 | Delete First | O(1) | O(1) |
-| Delete Last | O(n) | O(n) |
+| Delete Last | O(n) | O(1) |
 | Delete at Index | O(n) | O(n) |
 | Search | O(n) | O(n) |
 | Display | O(n) | O(n) |
+| Reverse Traversal | — | O(n) |
 
-> *Singly Linked List maintains a tail pointer, making insertion at the end **O(1)**.
+> *Assumes the linked list maintains a tail pointer.
 
 ---
 
@@ -158,27 +175,21 @@ java Main
 
 # 🎯 Learning Outcomes
 
-After completing this directory, you should understand:
+After completing this directory, you should be able to:
 
-- How linked lists work internally.
-- Difference between Singly and Doubly Linked Lists.
-- Why linked lists provide efficient insertions and deletions.
-- How pointer manipulation works.
-- How interview problems use techniques like:
+- Build linked lists from scratch.
+- Understand the difference between Singly and Doubly Linked Lists.
+- Perform insertion, deletion, traversal, and searching operations.
+- Manipulate pointers confidently.
+- Apply common interview techniques such as:
   - Slow & Fast Pointer
-  - In-place Reversal
+  - Two Pointer Technique
   - Cycle Detection
+  - In-place Reversal
+  - Palindrome Checking
 
 ---
 
 # 📌 Notes
 
-This implementation is intended for **learning and interview preparation**, focusing on building linked lists from scratch rather than relying on Java's built-in `LinkedList` class.
-
-It also serves as a foundation for advanced data structures such as:
-
-- Stack
-- Queue
-- LRU Cache
-- HashMap Chaining
-- Graph Adjacency Lists
+This module is intended for **Data Structures learning** and **coding interview preparation**. It emphasizes implementing linked lists manually instead of using Java's built-in `LinkedList` class.
