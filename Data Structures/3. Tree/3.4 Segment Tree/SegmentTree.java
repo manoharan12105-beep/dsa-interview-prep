@@ -4,7 +4,7 @@ public class SegmentTree {
   private static class Node {
     private int data;
     private int stval;  // Start Interval
-    private int endval;  // End Interval
+    private int endval; // End Interval
     private Node left;
     private Node right;
     private int height;
