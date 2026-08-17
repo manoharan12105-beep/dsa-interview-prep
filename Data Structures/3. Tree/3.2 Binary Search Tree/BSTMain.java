@@ -24,6 +24,11 @@ public class BSTMain {
     
     */
 
+    System.out.println();
+
+    tree.delete(4);
+    tree.display();
+
     System.out.println("\nIs tree Balanced ? " + tree.balanced() + "\n");  // False
 
 

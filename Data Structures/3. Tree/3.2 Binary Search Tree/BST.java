@@ -80,6 +80,63 @@ public class BST {
     populateSorted(nums, mid + 1, end);
   }
 
+// ======================== Deletion ======================== //
+
+public void delete(int data) {
+  root = delete(data, root);
+}
+
+public Node delete(int data, Node node) {
+  if(node == null) {
+    return null;
+  }
+
+  if(data < node.data) {
+    node .left = delete(data, node.left);
+  } else if(data > node.data) {
+    node.right = delete(data, node.right);
+  } else {                                          
+                                                    
+    /* ================ Node Deletion ================ */
+
+    // Case 1 : No Childs
+    if(node.left == null && node.right == null) { 
+      return null;
+    } 
+    
+    // Case 2 : Only Left Child
+    if(node.left == null) {                           
+      return node.right;
+    }
+
+    // Case 3 : Only Right Child
+    if(node.right == null) {                         
+      return node.left;
+    }
+
+    // Case 4 : Two Childs
+    Node successor = findMin(node.right);
+
+    node.data = successor.data;
+
+    node.right = delete(node.data, node.right);
+  }
+
+  node.height = Math.max(height(node.left), height(node.right)) + 1;    // Updating the Height
+  return node;
+}
+
+private Node findMin(Node node) {
+  while(node.left != null) {
+    node = node.left;
+  }
+
+  return node;
+}
+
+
+
+
 
 // ======================== Balanced? ======================== //
 
@@ -154,7 +211,7 @@ public class BST {
 
   // Post-Order Travseral
   public void postOrder() {
-    inOrder(root);
+    postOrder(root);
   }
 
   private void postOrder(Node node) {
@@ -162,8 +219,8 @@ public class BST {
       return;
     }
 
-    inOrder(node.left);
-    inOrder(node.right);
+    postOrder(node.left);
+    postOrder(node.right);
     System.out.print(node.data + " ");
   }
 }
