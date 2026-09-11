@@ -18,20 +18,18 @@
 | [T6](#t6-bst-operations) | BST Operations | 🟡 Medium |
 | [T7](#t7-bst-edge-cases) | BST Edge Cases | 🟡 Medium |
 | [T8](#t8-bst-advanced) | BST Advanced | 🟠 Medium–Hard |
-| [T9](#t9-medium-tree-problems) | Medium Tree Problems | 🟠 Medium |
-| [T10](#t10-tree-optimization) | Tree Optimization | 🟠 Medium |
-| [T11](#t11-tree-advanced) | Tree Advanced | 🔴 Hard |
+| [T9](#quick-reference-card) | Quick Reference Card | 📋 Reference |
 | [G1](#g1-graph-fundamentals) | Graph Fundamentals | 🟢 Easy |
 | [G2](#g2-bfs-and-dfs) | BFS and DFS | 🟡 Easy–Medium |
 | [G3](#g3-graph-variants) | Graph Variants | 🟡 Medium |
 | [G4](#g4-graph-problems) | Graph Problems | 🟠 Medium |
-| [G5](#g5-graph-advanced) | Graph Advanced | 🔴 Hard |
-| [G6](#g6-graph-hard) | Graph Hard | 🔴 Hard |
-| [G7](#g7-graph-specialized) | Graph Specialized | 🔴 Hard |
-| [X1](#x1-combined-concepts) | Combined Concepts | 🔴 Hard |
-| [X2](#x2-system-design-trees) | System Design with Trees | 🔴 Hard |
-| [X3](#x3-system-design-graphs) | System Design with Graphs | 🔴 Hard |
-| [X4](#x4-company-patterns) | Company-Specific Patterns | 🔴 Hard |
+| [G5](#g5-shortest-paths) | Shortest Paths | 🔴 Hard |
+| [G6](#g6-minimum-spanning-trees) | Minimum Spanning Trees | 🔴 Hard |
+| [G7](#g7-strongly-connected-components) | Strongly Connected Components | 🔴 Hard |
+| [G8](#g8-graph-hard-problems) | Graph Hard Problems | 🔴 Hard |
+| [G9](#g9-graph-specialized-algorithms) | Graph Specialized Algorithms | 🔴 Hard |
+| [Cross-Topic](#cross-topic-questions) | Cross-Topic Questions | 🔴 Hard |
+| [Cheat Sheet](#algorithm-cheat-sheet) | Algorithm Cheat Sheet | 📋 Reference |
 
 ---
 
