@@ -39,7 +39,7 @@
 
 ---
 
-## 🌳 Section T1: Basic Tree Concepts
+## T1: Basic Tree Concepts
 
 > **Difficulty:** 🟢 Easy
 > **Focus:** Foundational understanding of tree data structures
@@ -396,7 +396,7 @@ If a tree has 10 levels (level 0-9), the last level alone can have 2^9 = 512 nod
 
 ---
 
-## 🌳 Section T2: Traversal Variants
+## T2: Traversal Variants
 
 > **Difficulty:** 🟢 Easy
 > **Focus:** Mastering tree traversal techniques
@@ -1211,7 +1211,7 @@ Tree:       1
 
 ---
 
-## 🌳 Section T3: Tree Properties
+## T3: Tree Properties
 
 > **Difficulty:** 🟢 Easy
 > **Focus:** Understanding and computing tree properties
@@ -1603,7 +1603,7 @@ class Solution {
 
 ---
 
-## 🌳 Section T4: Height and Depth
+## T4: Height and Depth
 
 > **Difficulty:** 🟢 Easy
 > **Focus:** Computing and understanding height/depth in trees
@@ -1854,7 +1854,7 @@ Minimum depth = 3 (path: 1→2→4)
 
 ---
 
-## 🌲 Section T5: BST Fundamentals
+## T5: BST Fundamentals
 
 > **Difficulty:** 🟡 Easy–Medium
 > **Focus:** Core BST concepts and properties
@@ -2267,7 +2267,7 @@ public int kthSmallest(AugmentedTreeNode root, int k) {
 
 ---
 
-## 🌲 Section T6: BST Operations
+## T6: BST Operations
 
 > **Difficulty:** 🟡 Medium
 > **Focus:** Core BST manipulation techniques
@@ -2749,7 +2749,7 @@ public int findMax(TreeNode root) {
 
 ---
 
-## 🌲 Section T7: BST Edge Cases
+## T7: BST Edge Cases
 
 > **Difficulty:** 🟡 Medium
 > **Focus:** Handling tricky BST scenarios
@@ -3019,7 +3019,7 @@ Ceiling = 2
 
 ---
 
-## 🌲 Section T8: BST Advanced
+## T8: BST Advanced
 
 > **Difficulty:** 🟠 Medium–Hard
 > **Focus:** Advanced BST transformations and operations
@@ -3238,7 +3238,7 @@ LCA(0, 5) = 2  (both < 6 → go left; 0 < 2, 5 > 2 → 2 is LCA)
 
 ---
 
-## 📋 Quick Reference Card
+## Quick Reference Card
 
 | Topic | Key Algorithm | Time | Space |
 |-------|--------------|------|-------|
@@ -3260,7 +3260,7 @@ LCA(0, 5) = 2  (both < 6 → go left; 0 < 2, 5 > 2 → 2 is LCA)
 
 ---
 
-## 🕸️ Section G1: Graph Fundamentals
+## G1: Graph Fundamentals
 
 > **Difficulty:** 🟢 Easy
 > **Focus:** Foundational understanding of graphs, representations, and basic concepts
@@ -3809,7 +3809,7 @@ private boolean hasCycleDFS(int node, List<List<Integer>> adj, int[] color) {
 
 ---
 
-## 🕸️ Section G2: BFS and DFS
+## G2: BFS and DFS
 
 > **Difficulty:** 🟡 Easy–Medium
 > **Focus:** Core graph traversal techniques
@@ -4279,7 +4279,7 @@ public int connectedComponents(List<List<Integer>> adj) {
 
 ---
 
-## 🕸️ Section G3: Graph Variants
+## G3: Graph Variants
 
 > **Difficulty:** 🟡 Medium
 > **Focus:** Special graph types and their unique properties
@@ -4634,7 +4634,7 @@ K_1:    K_2:    K_3:    K_4:
 
 ---
 
-## 🕸️ Section G4: Graph Problems
+## G4: Graph Problems
 
 > **Difficulty:** 🟠 Medium
 > **Focus:** Common graph algorithms and problem patterns
@@ -4938,7 +4938,7 @@ public boolean canFinish(int numCourses, int[][] prerequisites) {
 
 ---
 
-## 🕸️ Section G5: Shortest Paths
+## G5: Shortest Paths
 
 > **Difficulty:** 🔴 Hard
 > **Focus:** Dijkstra, Bellman-Ford, Floyd-Warshall algorithms
@@ -5284,7 +5284,7 @@ public int[][] floydWarshall(int[][] graph) {
 
 ---
 
-## 🕸️ Section G6: Minimum Spanning Trees
+## G6: Minimum Spanning Trees
 
 > **Difficulty:** 🟠 Medium–Hard
 > **Focus:** Kruskal's and Prim's algorithms, Union-Find
@@ -5410,7 +5410,7 @@ public int primMST(List<List<int[]>> adj, int n) {
 
 ---
 
-## 🕸️ Section G7: Strongly Connected Components
+## G7: Strongly Connected Components
 
 > **Difficulty:** 🔴 Hard
 > **Focus:** Kosaraju's and Tarjan's algorithms
@@ -5573,7 +5573,7 @@ class TarjanSCC {
 
 ---
 
-## 🕸️ Section G8: Graph Hard Problems
+## G8: Graph Hard Problems
 
 > **Difficulty:** 🔴 Hard
 > **Focus:** Advanced algorithms for complex graph problems
@@ -5824,7 +5824,7 @@ private void dfs(int u, int parent, List<List<Integer>> adj,
 
 ---
 
-## 🕸️ Section G9: Graph Specialized Algorithms
+## G9: Graph Specialized Algorithms
 
 ---
 
@@ -5927,7 +5927,7 @@ public int zeroOneBFS(int[][] graph, int start, int end) {
 
 ---
 
-## 🔥 Cross-Topic Questions
+## Cross-Topic Questions
 
 ---
 
@@ -6193,7 +6193,7 @@ public long countSpanningTrees(int n, int[][] edges) {
 
 ---
 
-## 📋 Algorithm Cheat Sheet
+## Algorithm Cheat Sheet
 
 ### ⏱️ Complexity Summary
 
