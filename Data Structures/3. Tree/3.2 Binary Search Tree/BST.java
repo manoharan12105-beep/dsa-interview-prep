@@ -119,7 +119,7 @@ public Node delete(int data, Node node) {
 
     node.data = successor.data;
 
-    node.right = delete(node.data, node.right);
+    node.right = delete(node.data, node.right); 
   }
 
   node.height = Math.max(height(node.left), height(node.right)) + 1;    // Updating the Height
